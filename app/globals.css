@@ -25,4 +25,19 @@ body {
   font-family: var(--font-sans);
   margin: 0;
   padding: 0;
+  color: #111111;
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.035) 1px, transparent 1px),
+    #f7f4ed;
+  background-size: 44px 44px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #111111;
+  color: #ffffff;
 }

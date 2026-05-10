@@ -66,6 +66,12 @@ const system = [
 
 const process = ["Concept", "Design", "Motion", "Development"];
 
+const activities = [
+  ["Live Motion Review", "A compact critique session for hover, scroll, and transition timing."],
+  ["Interaction Jam", "Rapid prototypes for magnetic UI, shader surfaces, and cinematic landing pages."],
+  ["Visual System Lab", "Typography, grid, image direction, and reusable interface language."],
+];
+
 function useMotionVars() {
   const [vars, setVars] = useState({ x: 0, y: 0, scroll: 0 });
 
@@ -324,6 +330,32 @@ export default function Home() {
               <strong>{item}</strong>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="activity-section screen-section">
+        <h2 className="activity-giant-title">Activity Showcase.</h2>
+        <div className="activity-side-rail" aria-hidden="true">
+          {activities.map(([title], index) => (
+            <div key={title} className={index === 1 ? "is-active" : ""} />
+          ))}
+        </div>
+        <div className="activity-showcase">
+          <div className="activity-stage-grid" />
+          <div className="activity-stage-light" />
+          <div className="activity-orb" />
+          <article className="activity-floating-copy">
+            <p className="eyebrow">Live activity</p>
+            <h3>Interaction showcases shift with scroll, depth, and motion rhythm.</h3>
+          </article>
+          <div className="activity-scrollbar" aria-hidden="true">
+            <span />
+          </div>
+          <div className="activity-pills">
+            <a href="#system">System</a>
+            <a href="#lab">Motion</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </section>
 

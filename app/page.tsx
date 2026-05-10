@@ -119,7 +119,7 @@ const effects = [
        <section id="contact" className="px-6 py-24">
          <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-black p-10 text-white">
            <h2 className="text-4xl font-semibold md:text-6xl">
-             Let's build memorable interactions.
+             Let us build memorable interactions.
            </h2>
          </div>
        </section>

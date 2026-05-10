@@ -1,3 +1,5 @@
+import Featured from "@/components/Featured";
+
 const effects = [
    "Scroll Gallery",
    "Hover Preview",
@@ -102,6 +104,8 @@ const effects = [
            </div>
          </div>
        </section>
+
+       <Featured />
 
        <section id="projects" className="px-6 py-24">
          <div className="mx-auto max-w-7xl">
